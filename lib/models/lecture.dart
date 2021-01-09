@@ -5,11 +5,13 @@ class Lecture {
   final String url;
   final String startTime;
   final String endTime;
+  final int day;
 
   Lecture({
     @required this.name,
     @required this.url,
     @required this.startTime,
     @required this.endTime,
+    @required this.day,
   });
 }
