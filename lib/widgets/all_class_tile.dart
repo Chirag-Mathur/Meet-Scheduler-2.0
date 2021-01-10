@@ -32,6 +32,7 @@ class AllClassTile extends StatelessWidget {
         child: Text("LAUNCH"),
         onPressed: _launchURL,
       ),
+      onTap: _launchURL,
     );
   }
 }

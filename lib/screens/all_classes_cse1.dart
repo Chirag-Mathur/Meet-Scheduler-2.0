@@ -4,16 +4,19 @@ import '../widgets/all_class_tile.dart';
 
 class AllClassesCse1 extends StatelessWidget {
   static const routeName = '/allCse1';
-  final List<Lecture> allLectures;
+  
 
-  AllClassesCse1(this.allLectures);
+  //AllClassesCse1(this.allLectures);
 
   @override
   Widget build(BuildContext context) {
+
+    final List<Lecture> allLectures = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
         title: Text("All classes of today"),
       ),
+      //body: Text(allLectures.length.toString()),
       body: ListView.builder(
         itemCount: allLectures.length,
         itemBuilder: (context, index) => AllClassTile(

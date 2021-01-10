@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meet_scheduler_2/screens/all_classes_cse1.dart';
+import 'package:meet_scheduler_2/widgets/app_drawer.dart';
 import 'dart:async';
 import 'dart:math';
 
@@ -92,24 +94,20 @@ class _Cse1State extends State<Cse1> {
     }
     //print(DateTime.now());
 
-    // return weekday <= 5
-    //     ? AttendClass(
-    //         name: classes[0].name,
-    //         url: classes[0].url,
-    //         startTime: classes[0].startTime,
-    //         endTime: classes[0].endTime,
-    //       )
-    //     : Container(child: Text("No classes on Weekend"));
+    
     return Scaffold(
       appBar: AppBar(
         title: Text("Meet Scheduler 2.0"),
         actions: [
-          TextButton(
-            child: Text("All Classes"),
-            onPressed: (){},
+          OutlinedButton(
+            child: Text("All Classes", style: TextStyle(color: Colors.white),),
+            onPressed: (){
+              Navigator.of(context).pushNamed(AllClassesCse1.routeName, arguments: classes);
+            }
           ),
         ],
       ),
+      drawer: AppDrawer(),
       body: Container(
         child: weekday <= 5
             ? index <= 6
