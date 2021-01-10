@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/lecture.dart';
 import '../widgets/all_class_tile.dart';
 
-class AllClassesCse1 extends StatelessWidget {
+class AllClasses extends StatelessWidget {
   static const routeName = '/allCse1';
   
 

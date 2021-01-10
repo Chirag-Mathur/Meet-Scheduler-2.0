@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meet_scheduler_2/screens/cse2.dart';
+import 'package:meet_scheduler_2/screens/it2.dart';
 import 'package:meet_scheduler_2/widgets/app_drawer.dart';
 
 import './cse1.dart';
@@ -38,7 +40,9 @@ class Home extends StatelessWidget {
                       child: Text('CSE - Section 2'),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(Cse2.routeName);
+                  },
                 ),
                 RaisedButton(
                   child: Padding(
@@ -48,7 +52,9 @@ class Home extends StatelessWidget {
                       child: Text('IT - Section 2'),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(It2.routeName);
+                  },
                 ),
               ],
             ),

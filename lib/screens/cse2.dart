@@ -4,20 +4,20 @@ import 'package:meet_scheduler_2/widgets/app_drawer.dart';
 import 'dart:async';
 import 'dart:math';
 
-import '../models/lecture_list_cse1.dart';
+import '../models/lecture_list_Cse2.dart';
 import '../widgets/attend_class.dart';
 import '../models/lecture.dart';
 
-class Cse1 extends StatefulWidget {
+class Cse2 extends StatefulWidget {
 
-  static const routeName = '/cse1';
+  static const routeName = '/Cse2';
 
   @override
-  _Cse1State createState() => _Cse1State();
+  _Cse2State createState() => _Cse2State();
 }
 
-class _Cse1State extends State<Cse1> {
-  LectureListCse1 lectureList = new LectureListCse1();
+class _Cse2State extends State<Cse2> {
+  LectureListCse2 lectureList = new LectureListCse2();
   Timer timer;
   List<Lecture> classes;
   int index = 0;
