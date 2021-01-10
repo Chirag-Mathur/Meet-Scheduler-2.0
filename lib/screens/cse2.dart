@@ -4,7 +4,7 @@ import 'package:meet_scheduler_2/widgets/app_drawer.dart';
 import 'dart:async';
 import 'dart:math';
 
-import '../models/lecture_list_Cse2.dart';
+import '../models/lecture_list_cse2.dart';
 import '../widgets/attend_class.dart';
 import '../models/lecture.dart';
 
