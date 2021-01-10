@@ -15,7 +15,6 @@ class AllClassTile extends StatelessWidget {
   });
 
   _launchURL() async {
-    
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -28,10 +27,12 @@ class AllClassTile extends StatelessWidget {
     return ListTile(
       title: Text(name),
       subtitle: Text(startTime + " - " + endTime),
-      trailing: OutlineButton(
-        child: Text("LAUNCH"),
-        onPressed: _launchURL,
-      ),
+      // trailing: name.compareTo("Break") != 0
+      //     ? OutlineButton(
+      //         child: Text("LAUNCH"),
+      //         onPressed: _launchURL,
+      //       )
+      //     : Container(child: Text(""),),
       onTap: _launchURL,
     );
   }
