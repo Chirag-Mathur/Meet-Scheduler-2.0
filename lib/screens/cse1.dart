@@ -28,7 +28,7 @@ class _Cse1State extends State<Cse1> {
   void initState() {
     super.initState();
     timer =
-        Timer.periodic(Duration(seconds: 15), (Timer t) => getCurrentDate());
+        Timer.periodic(Duration(seconds: 5), (Timer t) => getCurrentDate());
   }
 
   @override
