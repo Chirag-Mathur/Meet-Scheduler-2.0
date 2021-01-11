@@ -28,7 +28,7 @@ class _Cse2State extends State<Cse2> {
   void initState() {
     super.initState();
     timer =
-        Timer.periodic(Duration(seconds: 5), (Timer t) => getCurrentDate());
+        Timer.periodic(Duration(seconds: 1), (Timer t) => getCurrentDate());
   }
 
   @override
@@ -79,8 +79,8 @@ class _Cse2State extends State<Cse2> {
 
   @override
   Widget build(BuildContext context) {
-    weekday = 1;
-    print(weekday);
+    // weekday = 1;
+    // print(weekday);
     if (weekday == 1) {
       classes = lectureList.classesOnMonday;
     } else if (weekday == 2) {
@@ -112,10 +112,10 @@ class _Cse2State extends State<Cse2> {
         child: weekday <= 5
             ? index <= 6
                 ? AttendClass(
-                    name: classes[0].name,
-                    url: classes[0].url,
-                    startTime: classes[0].startTime,
-                    endTime: classes[0].endTime,
+                    name: classes[index].name,
+                    url: classes[index].url,
+                    startTime: classes[index].startTime,
+                    endTime: classes[index].endTime,
                   )
                 // ? Text(index.toString())
                 : Container(

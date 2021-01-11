@@ -13,7 +13,7 @@ class LectureListCse1 {
     ),
     Lecture(
       name: "cs204",
-      url: "https://meet.google.com/lookup/abll4rtdz5?pli=1&authuser=1",
+      url: "https://meet.google.com/ofs-wezh-che?pli=1&authuser=1",
       startTime: "9: 00 am ",
       endTime: "9 : 55 am",
       day: 1,
@@ -66,7 +66,7 @@ class LectureListCse1 {
     ),
     Lecture(
       name: "cs204",
-      url: "https://meet.google.com/lookup/abll4rtdz5?pli=1&authuser=1",
+      url: "https://meet.google.com/ofs-wezh-che?pli=1&authuser=1",
       startTime: "9: 00 am ",
       endTime: "9 : 55 am",
       day: 2,
@@ -180,7 +180,7 @@ class LectureListCse1 {
     ),
     Lecture(
       name: "cs204",
-      url: "https://meet.google.com/lookup/abll4rtdz5?pli=1&authuser=1",
+      url: "https://meet.google.com/ofs-wezh-che?pli=1&authuser=1",
       startTime: "10: 15 am ",
       endTime: "11 : 10 am",
       day: 4,
